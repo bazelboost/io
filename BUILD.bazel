@@ -14,5 +14,6 @@ cc_library(
 	defines = [
 	],
 	deps = [
+		"@com_github_bazelboost_config//:config"
 	],
 )
