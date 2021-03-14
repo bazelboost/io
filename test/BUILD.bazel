@@ -1,0 +1,66 @@
+load("@rules_cc//cc:defs.bzl", "cc_test")
+
+cc_test(
+    name = "ios_state_test",
+    srcs = ["ios_state_test.cpp"],
+    deps = [
+        "//:io",
+        "@boost//core",
+        "@boost//config",
+    ],
+)
+
+cc_test(
+    name = "ios_state_unit_test",
+    srcs = ["ios_state_unit_test.cpp"],
+    deps = [
+        "//:io",
+        "@boost//core",
+        "@boost//config",
+    ],
+)
+
+cc_test(
+    name = "make_ostream_joiner_test",
+    srcs = ["make_ostream_joiner_test.cpp"],
+    deps = [
+        "//:io",
+        "@boost//core",
+    ],
+)
+
+cc_test(
+    name = "ostream_joiner_test",
+    srcs = ["ostream_joiner_test.cpp"],
+    deps = [
+        "//:io",
+        "@boost//core",
+    ],
+)
+
+cc_test(
+    name = "ostream_put_test",
+    srcs = ["ostream_put_test.cpp"],
+    deps = [
+        "//:io",
+        "@boost//core",
+    ],
+)
+
+cc_test(
+    name = "quoted_fill_test",
+    srcs = ["quoted_fill_test.cpp"],
+    deps = [
+        "//:io",
+        "@boost//core",
+    ],
+)
+
+cc_test(
+    name = "quoted_test",
+    srcs = ["quoted_test.cpp"],
+    deps = [
+        "//:io",
+        "@boost//core",
+    ],
+)
